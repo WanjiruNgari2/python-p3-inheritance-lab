@@ -6,5 +6,18 @@ import random
 
 class Teacher(User):
 
+    knowledge = [ "str is a data type in Python",
+    "programming is hard, but it's worth it",
+    "JavaScript async web request",
+    "Python function call definition",
+    "object-oriented teacher instance",
+    "programming computers hacking learning terminal",
+    "pipenv install pipenv shell",
+    "pytest -x flag to fail fast",]
+
     def teach(self):
-        pass
+        
+        lesson = random.choice(self.knowledge)
+        return lesson # print the lesson the teacher is teaching to the console
+        print(f"Teacher {self.name} is teaching: {lesson}")
+        
